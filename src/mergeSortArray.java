@@ -20,6 +20,9 @@ public class mergeSortArray
 
     private void merge(int[] arr, int left, int mid, int right, int[] temp)
     {
+        for(int i = 0;i<right;i++)
+        {
 
+        }
     }
 }
