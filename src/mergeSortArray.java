@@ -1,13 +1,13 @@
 public class mergeSortArray
 {
-    public void mergeSort(int[] arr)
+    public static void mergeSort(int[] arr)
     {
         int n = arr.length;
         int[] temp = new int[n];
         mergeSortHelper(arr,0,n-1,temp);
     }
 
-    private void mergeSortHelper(int[] arr, int left, int right, int[] temp)
+    private static void mergeSortHelper(int[] arr, int left, int right, int[] temp)
     {
         if(left<right)
         {
@@ -18,7 +18,7 @@ public class mergeSortArray
         }
     }
 
-    private void merge(int[] arr, int left, int mid, int right, int[] temp)
+    private static void merge(int[] arr, int left, int mid, int right, int[] temp)
     {
         int i = left;
         int j = mid+1;
