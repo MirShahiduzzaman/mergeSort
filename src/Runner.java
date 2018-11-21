@@ -2,12 +2,12 @@ public class Runner
 {
     public static void main(String[] args)
     {
-        int[] check = randIntArr(100000);
+        int[] check = randIntArr(36000);
         printArr(check);
 
-        long start = System.nanoTime();
+        long start = System.currentTimeMillis();
         mergeSortArray.mergeSort(check);
-        long diff = System.nanoTime() - start;
+        long diff = System.currentTimeMillis() - start;
         printArr(check);
         System.out.println(diff + "\n");
     }
